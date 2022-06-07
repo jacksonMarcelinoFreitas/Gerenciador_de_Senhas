@@ -86,7 +86,7 @@
                                   <Component id="txtIdUsuario" min="-2" pref="178" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace pref="54" max="32767" attributes="0"/>
+                          <EmptySpace pref="51" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>

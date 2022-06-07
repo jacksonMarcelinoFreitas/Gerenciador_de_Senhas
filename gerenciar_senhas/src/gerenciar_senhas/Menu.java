@@ -141,7 +141,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnExcluirActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-        Cadastrar cadastrar = new Cadastrar();
+        CadastrarUsuario cadastrar = new CadastrarUsuario();
         cadastrar.setVisible(true);
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
