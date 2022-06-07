@@ -1,5 +1,5 @@
 
-package gerenciar_senhas;
+package formulario;
 
 public class Menu extends javax.swing.JFrame {
 

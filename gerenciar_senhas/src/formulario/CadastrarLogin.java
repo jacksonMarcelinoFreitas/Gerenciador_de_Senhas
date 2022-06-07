@@ -1,5 +1,5 @@
 
-package gerenciar_senhas;
+package formulario;
 
 import BD.Conexao;
 import java.sql.Connection;

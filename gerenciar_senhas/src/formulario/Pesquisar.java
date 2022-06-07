@@ -1,4 +1,4 @@
-package gerenciar_senhas;
+package formulario;
 
 import BD.Conexao;
 import java.awt.Image;
@@ -206,21 +206,9 @@ public class Pesquisar extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnPesquisar;
     private javax.swing.JButton btnSair;
-    private javax.swing.JButton btnSair1;
-    private javax.swing.JButton btnSair2;
-    private javax.swing.JButton btnSair3;
-    private javax.swing.JButton btnSair4;
-    private javax.swing.JButton btnSair5;
-    private javax.swing.JButton btnSair6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tabelaPesquisar;
     private javax.swing.JTextField txtPesquisar;
