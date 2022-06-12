@@ -10,11 +10,12 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
-public class Excluir extends javax.swing.JFrame {
+public class ExcluirLogin extends javax.swing.JFrame {
 
   
-    public Excluir() {
+    public ExcluirLogin() {
         initComponents();
+        mostrarNaTabela();    
     }
 
   
@@ -62,13 +63,13 @@ public class Excluir extends javax.swing.JFrame {
         tabelaPesquisar.setForeground(new java.awt.Color(30, 30, 30));
         tabelaPesquisar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Nome", "Sobrenome"
+                "Tipo", "URL", "Senha", "Usuário"
             }
         ));
         tabelaPesquisar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -78,13 +79,18 @@ public class Excluir extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tabelaPesquisar);
 
+        txtPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPesquisarActionPerformed(evt);
+            }
+        });
         txtPesquisar.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtPesquisarKeyReleased(evt);
             }
         });
 
-        jLabel2.setText("Pesquisar por usuário");
+        jLabel2.setText("Pesquisar por URL");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -203,25 +209,30 @@ public class Excluir extends javax.swing.JFrame {
         // Codigo excluir produto
         try {
             Connection c=con.conectar();
-            PreparedStatement excluirStmt=c.prepareStatement("delete from Usuario where Nome=?");
+            PreparedStatement excluirStmt=c.prepareStatement("delete from login where url=?");
             excluirStmt.setString(1, txtPesquisar.getText());    
             excluirStmt.execute();
             excluirStmt.close();
             JOptionPane.showMessageDialog(null, "Produto Deletado com sucesso");
             con.desconectar();           
-        } catch (SQLException e) {
+        } catch (SQLException erro) {
+            JOptionPane.showMessageDialog(null, erro);
+            JOptionPane.showMessageDialog(null, "Não foi possível deletar este login!");
             System.err.println("Error ao Deletar Registro");
-            System.err.println(e.getMessage());
+            System.err.println(erro.getMessage());
         }finally{
             con.desconectar();
         }            
     }//GEN-LAST:event_btnExcluirActionPerformed
 
     private void txtPesquisarKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPesquisarKeyReleased
-
+        mostrarNaTabela();                                                                  
+    }//GEN-LAST:event_txtPesquisarKeyReleased
+    
+    public void mostrarNaTabela(){
         try {
             Connection c=con.conectar();
-            PreparedStatement pesquisarStmt = c.prepareStatement("SELECT * FROM Usuario where nome like '%"+txtPesquisar.getText()+"%'");  
+            PreparedStatement pesquisarStmt = c.prepareStatement("SELECT * FROM Login where url like '%"+txtPesquisar.getText()+"%'");  
             
             ResultSet rs = pesquisarStmt.executeQuery();                          
                  //Exibindo dados da pesquisa na tabela
@@ -231,15 +242,17 @@ public class Excluir extends javax.swing.JFrame {
             while(rs.next()){
                 model.addRow(
                 new Object[]{
-                    rs.getString("Nome"),
-                    rs.getString("Sobrenome"),
+                    rs.getString("tipo"),
+                    rs.getString("url"),
+                    rs.getString("senha"),
+                    rs.getString("fk_idUsuario")
                 });                                             
             }    
         }catch (SQLException e){
             System.out.println("ocorreu um erro ao conectar");
-        }                                                              
-    }//GEN-LAST:event_txtPesquisarKeyReleased
-
+        }
+    }
+    
     private void tabelaPesquisarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabelaPesquisarMouseClicked
         int linha=tabelaPesquisar.getSelectedRow();
         txtPesquisar.setText(tabelaPesquisar.getValueAt(linha, 0).toString());
@@ -249,12 +262,16 @@ public class Excluir extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnSairActionPerformed
 
+    private void txtPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPesquisarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPesquisarActionPerformed
+
     
     public static void main(String args[]) {
         
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Excluir().setVisible(true);
+                new ExcluirLogin().setVisible(true);
             }
         });
     }

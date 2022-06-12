@@ -136,13 +136,13 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
-        Excluir excluir = new Excluir();
+        MenuExcluir excluir = new MenuExcluir();
         excluir.setVisible(true);
     }//GEN-LAST:event_btnExcluirActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-        CadastrarUsuario cadastrar = new CadastrarUsuario();
-        cadastrar.setVisible(true);
+        MenuCadastrar cadastrarTipo = new MenuCadastrar();
+        cadastrarTipo.setVisible(true);
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed

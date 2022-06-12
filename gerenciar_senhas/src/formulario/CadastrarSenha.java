@@ -216,7 +216,7 @@ public class CadastrarSenha extends javax.swing.JFrame {
 
     private void btnOpenPageCadLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOpenPageCadLoginActionPerformed
         // TODO add your handling code here:
-        CadastrarLogin cadastrarLogin = new CadastrarLogin();
+        CadastrarLoginSenha cadastrarLogin = new CadastrarLoginSenha();
         cadastrarLogin.setVisible(true);
     }//GEN-LAST:event_btnOpenPageCadLoginActionPerformed
     

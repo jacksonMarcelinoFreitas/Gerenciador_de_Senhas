@@ -259,7 +259,7 @@ public class Alterar extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             Connection c=con.conectar();
-            PreparedStatement alterarStmt=c.prepareStatement("UPDATE Usuario SET nome=?, sobrenome=? WHERE nome=?");       
+            PreparedStatement alterarStmt = c.prepareStatement("UPDATE Usuario SET nome=?, sobrenome=? WHERE nome=?");       
             alterarStmt.setString(1, txtNome.getText());//txtnome  tem de vir primeiro conforme a ordem
             alterarStmt.setString(2, txtSobrenome.getText());
             alterarStmt.execute();

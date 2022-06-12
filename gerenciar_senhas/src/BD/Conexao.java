@@ -13,17 +13,18 @@ public class Conexao {
     public String db="gerenciar_senhas";
     public String user="root";
     public String pass="jackson1500";
-    Connection conn=null;
+    Connection conn = null;  
     
+    //Método Coneectar
     public Connection conectar(){
         try {
             String ruta="jdbc:mysql://";
             String servidor=nomServidor+":"+porta+"/";
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(ruta+servidor+db,user,pass);
-            if(conn!=null){
+            if(conn != null){
                 System.out.println("Conexão com o Banco de Dados realizada com sucesso!!!");
-            }else if(conn==null){
+            }else if(conn == null){
                 throw new SQLException();
             }
         } catch (SQLException e) {
@@ -38,6 +39,6 @@ public class Conexao {
     }
         public void desconectar(){
         conn = null;
-        System.out.println("Desconectado...Done!!!");
+        System.out.println("Desconectado...Pronto!!!");
     }
 }
