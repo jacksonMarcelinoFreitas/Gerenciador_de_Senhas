@@ -7,42 +7,27 @@ public class Menu extends javax.swing.JFrame {
     public Menu() {
         initComponents();
     }
-
- 
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         btnExcluir = new javax.swing.JButton();
         btnCadastrar = new javax.swing.JButton();
         btnPesquisar = new javax.swing.JButton();
         btnAlterar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(196, 218, 241));
+        setBackground(new java.awt.Color(212, 213, 255));
+        setMinimumSize(new java.awt.Dimension(710, 540));
+        setPreferredSize(new java.awt.Dimension(700, 500));
+        getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Kimberley Bl", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(23, 69, 128));
-        jLabel1.setText("Gerenciar Senhas");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(137, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(135, 135, 135))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-        );
-
-        btnExcluir.setBackground(new java.awt.Color(35, 67, 97));
+        btnExcluir.setBackground(new java.awt.Color(70, 72, 237));
         btnExcluir.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 18)); // NOI18N
         btnExcluir.setForeground(new java.awt.Color(255, 255, 255));
         btnExcluir.setText("Excluir");
@@ -52,7 +37,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        btnCadastrar.setBackground(new java.awt.Color(35, 67, 97));
+        btnCadastrar.setBackground(new java.awt.Color(70, 72, 237));
         btnCadastrar.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 18)); // NOI18N
         btnCadastrar.setForeground(new java.awt.Color(255, 255, 255));
         btnCadastrar.setText("Cadastrar");
@@ -62,7 +47,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        btnPesquisar.setBackground(new java.awt.Color(35, 67, 97));
+        btnPesquisar.setBackground(new java.awt.Color(70, 72, 237));
         btnPesquisar.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 18)); // NOI18N
         btnPesquisar.setForeground(new java.awt.Color(255, 255, 255));
         btnPesquisar.setText("Pesquisar");
@@ -72,7 +57,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        btnAlterar.setBackground(new java.awt.Color(35, 67, 97));
+        btnAlterar.setBackground(new java.awt.Color(70, 72, 237));
         btnAlterar.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 18)); // NOI18N
         btnAlterar.setForeground(new java.awt.Color(255, 255, 255));
         btnAlterar.setText("Alterar");
@@ -111,28 +96,27 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap(51, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(67, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(70, 280, 236, 186);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\jacks\\OneDrive - Instituição Adventista de Ensino\\FACUL\\3° Semestre\\Programação Orientada a Objetos\\Trabalho - CRUD\\Imagens\\Logo.png")); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(130, 150, 115, 122);
+
+        jLabel1.setFont(new java.awt.Font("Kimberley Bl", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(56, 58, 186));
+        jLabel1.setText("Gerenciar Senhas");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(90, 50, 204, 79);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\jacks\\OneDrive - Instituição Adventista de Ensino\\FACUL\\3° Semestre\\Programação Orientada a Objetos\\Trabalho - CRUD\\Imagens\\Banckground Menu.png")); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(386, 0, 316, 496);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
@@ -172,7 +156,8 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton btnExcluir;
     private javax.swing.JButton btnPesquisar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

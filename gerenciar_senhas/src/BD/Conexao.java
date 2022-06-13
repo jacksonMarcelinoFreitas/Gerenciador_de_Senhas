@@ -39,6 +39,6 @@ public class Conexao {
     }
         public void desconectar(){
         conn = null;
-        System.out.println("Desconectado...Pronto!!!");
+        System.out.println("Desconectado do banco de dados!");
     }
 }

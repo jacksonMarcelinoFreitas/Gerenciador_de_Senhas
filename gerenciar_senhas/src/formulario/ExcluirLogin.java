@@ -23,6 +23,7 @@ public class ExcluirLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -30,14 +31,23 @@ public class ExcluirLogin extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         txtPesquisar = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         btnExcluir = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
         btnSair = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(710, 540));
+        getContentPane().setLayout(null);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\jacks\\OneDrive - Instituição Adventista de Ensino\\FACUL\\3° Semestre\\Programação Orientada a Objetos\\Trabalho - CRUD\\Imagens\\garbage2.png")); // NOI18N
+        jLabel5.setText("jLabel4");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(610, 20, 70, 90);
 
         jLabel1.setFont(new java.awt.Font("Kimberley Bl", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(56, 58, 186));
         jLabel1.setText("Excluir");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -45,9 +55,9 @@ public class ExcluirLogin extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(207, 207, 207)
+                .addGap(302, 302, 302)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(309, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -57,10 +67,13 @@ public class ExcluirLogin extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(6, 45, 688, 42);
+
         tabelaPesquisar.setBackground(new java.awt.Color(255, 255, 255));
         tabelaPesquisar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         tabelaPesquisar.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 14)); // NOI18N
-        tabelaPesquisar.setForeground(new java.awt.Color(30, 30, 30));
+        tabelaPesquisar.setForeground(new java.awt.Color(79, 82, 255));
         tabelaPesquisar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -72,6 +85,7 @@ public class ExcluirLogin extends javax.swing.JFrame {
                 "Tipo", "URL", "Senha", "Usuário"
             }
         ));
+        tabelaPesquisar.setSelectionForeground(new java.awt.Color(79, 82, 255));
         tabelaPesquisar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tabelaPesquisarMouseClicked(evt);
@@ -79,6 +93,10 @@ public class ExcluirLogin extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tabelaPesquisar);
 
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(6, 233, 688, 110);
+
+        txtPesquisar.setBackground(new java.awt.Color(181, 182, 255));
         txtPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPesquisarActionPerformed(evt);
@@ -90,7 +108,11 @@ public class ExcluirLogin extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setForeground(new java.awt.Color(79, 82, 255));
         jLabel2.setText("Pesquisar por URL");
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\jacks\\OneDrive - Instituição Adventista de Ensino\\FACUL\\3° Semestre\\Programação Orientada a Objetos\\Trabalho - CRUD\\Imagens\\lupa.png")); // NOI18N
+        jLabel4.setText("jLabel4");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -99,12 +121,14 @@ public class ExcluirLogin extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(116, 116, 116)
+                        .addGap(168, 168, 168)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(185, 185, 185)
+                        .addGap(289, 289, 289)
                         .addComponent(jLabel2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(213, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,11 +136,16 @@ public class ExcluirLogin extends javax.swing.JFrame {
                 .addGap(19, 19, 19)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtPesquisar, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        btnExcluir.setBackground(new java.awt.Color(150, 0, 25));
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(6, 105, 688, 100);
+
+        btnExcluir.setBackground(new java.awt.Color(56, 58, 186));
         btnExcluir.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 14)); // NOI18N
         btnExcluir.setForeground(new java.awt.Color(255, 255, 255));
         btnExcluir.setText("Excluir");
@@ -131,9 +160,9 @@ public class ExcluirLogin extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(199, 199, 199)
+                .addGap(294, 294, 294)
                 .addComponent(btnExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(308, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -142,6 +171,9 @@ public class ExcluirLogin extends javax.swing.JFrame {
                 .addComponent(btnExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(10, 360, 688, 49);
 
         btnSair.setBackground(new java.awt.Color(150, 0, 25));
         btnSair.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 14)); // NOI18N
@@ -152,55 +184,16 @@ public class ExcluirLogin extends javax.swing.JFrame {
                 btnSairActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSair);
+        btnSair.setBounds(630, 460, 62, 24);
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(7, Short.MAX_VALUE)
-                .addComponent(btnSair)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37))
-        );
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\jacks\\OneDrive - Instituição Adventista de Ensino\\FACUL\\3° Semestre\\Programação Orientada a Objetos\\Trabalho - CRUD\\Imagens\\barraBaixo.png")); // NOI18N
+        jLabel6.setText("jLabel3");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(0, 420, 700, 86);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
 
@@ -216,10 +209,8 @@ public class ExcluirLogin extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Produto Deletado com sucesso");
             con.desconectar();           
         } catch (SQLException erro) {
-            JOptionPane.showMessageDialog(null, erro);
             JOptionPane.showMessageDialog(null, "Não foi possível deletar este login!");
-            System.err.println("Error ao Deletar Registro");
-            System.err.println(erro.getMessage());
+            System.out.println("ERROR -> ExcluirLogin -> " + erro);
         }finally{
             con.desconectar();
         }            
@@ -229,10 +220,11 @@ public class ExcluirLogin extends javax.swing.JFrame {
         mostrarNaTabela();                                                                  
     }//GEN-LAST:event_txtPesquisarKeyReleased
     
+    //Método para selecionar e mostrar na tabela
     public void mostrarNaTabela(){
         try {
             Connection c=con.conectar();
-            PreparedStatement pesquisarStmt = c.prepareStatement("SELECT * FROM Login where url like '%"+txtPesquisar.getText()+"%'");  
+            PreparedStatement pesquisarStmt = c.prepareStatement("SELECT * FROM login WHERE url like '%"+txtPesquisar.getText()+"%'");  
             
             ResultSet rs = pesquisarStmt.executeQuery();                          
                  //Exibindo dados da pesquisa na tabela
@@ -248,11 +240,15 @@ public class ExcluirLogin extends javax.swing.JFrame {
                     rs.getString("fk_idUsuario")
                 });                                             
             }    
-        }catch (SQLException e){
-            System.out.println("ocorreu um erro ao conectar");
+        }catch (SQLException erro){
+            System.out.println("Ocorreu um erro ao conectar com o Banco de dados!");
+            System.out.println("Excluir -> Login ->" + erro);
+        }finally{
+            con.desconectar();
         }
     }
     
+    //Inserir nas labels os elementos quando clicado
     private void tabelaPesquisarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabelaPesquisarMouseClicked
         int linha=tabelaPesquisar.getSelectedRow();
         txtPesquisar.setText(tabelaPesquisar.getValueAt(linha, 0).toString());
@@ -263,7 +259,7 @@ public class ExcluirLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSairActionPerformed
 
     private void txtPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPesquisarActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtPesquisarActionPerformed
 
     
@@ -281,10 +277,12 @@ public class ExcluirLogin extends javax.swing.JFrame {
     private javax.swing.JButton btnSair;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tabelaPesquisar;
     private javax.swing.JTextField txtPesquisar;
