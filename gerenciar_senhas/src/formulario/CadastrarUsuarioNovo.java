@@ -114,12 +114,16 @@ public class CadastrarUsuarioNovo extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(79, 82, 255));
         jLabel2.setText("Sobrenome");
 
+        txtSobrenome.setBackground(new java.awt.Color(212, 213, 255));
+        txtSobrenome.setForeground(new java.awt.Color(56, 58, 186));
         txtSobrenome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSobrenomeActionPerformed(evt);
             }
         });
 
+        txtNome.setBackground(new java.awt.Color(212, 213, 255));
+        txtNome.setForeground(new java.awt.Color(56, 58, 186));
         txtNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNomeActionPerformed(evt);

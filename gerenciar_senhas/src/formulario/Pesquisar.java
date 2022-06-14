@@ -64,7 +64,8 @@ public class Pesquisar extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 30, 700, 50);
 
-        tabelaPesquisar.setBackground(new java.awt.Color(255, 255, 255));
+        tabelaPesquisar.setAutoCreateRowSorter(true);
+        tabelaPesquisar.setBackground(new java.awt.Color(212, 213, 255));
         tabelaPesquisar.setForeground(new java.awt.Color(70, 72, 237));
         tabelaPesquisar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -85,6 +86,8 @@ public class Pesquisar extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        tabelaPesquisar.setGridColor(new java.awt.Color(143, 148, 176));
+        tabelaPesquisar.setSelectionBackground(new java.awt.Color(255, 255, 255));
         tabelaPesquisar.setSelectionForeground(new java.awt.Color(70, 72, 237));
         tabelaPesquisar.getTableHeader().setReorderingAllowed(false);
         jScrollPane2.setViewportView(tabelaPesquisar);
@@ -99,8 +102,8 @@ public class Pesquisar extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(115, 115, 115))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(143, 143, 143))
         );
 
         getContentPane().add(jPanel3);
@@ -119,6 +122,7 @@ public class Pesquisar extends javax.swing.JFrame {
         btnSair.setBounds(620, 460, 60, 24);
 
         txtPesquisar.setBackground(new java.awt.Color(181, 182, 255));
+        txtPesquisar.setForeground(new java.awt.Color(56, 58, 186));
         txtPesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPesquisarActionPerformed(evt);

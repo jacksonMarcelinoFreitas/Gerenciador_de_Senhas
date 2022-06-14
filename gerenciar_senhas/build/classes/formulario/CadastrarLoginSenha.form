@@ -30,9 +30,17 @@
   <SubComponents>
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="d5" red="d4" type="rgb"/>
+        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
             <TitledBorder title="Login">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="ff" green="52" red="4f" type="rgb"/>
+                </LineBorder>
+              </Border>
               <Color PropertyName="color" blue="ed" green="48" red="46" type="rgb"/>
             </TitledBorder>
           </Border>
@@ -68,7 +76,7 @@
                           <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
                           <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                          <Component id="cbxUsuario" pref="94" max="32767" attributes="0"/>
+                          <Component id="cbxUsuario" pref="91" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="267" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -161,6 +169,9 @@
         </Component>
         <Component class="javax.swing.JComboBox" name="cbxUsuario">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="d5" red="d4" type="rgb"/>
+            </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ed" green="48" red="46" type="rgb"/>
             </Property>
@@ -270,9 +281,17 @@
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel5">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="d5" red="d4" type="rgb"/>
+        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
             <TitledBorder title="Senha">
+              <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="ff" green="52" red="4f" type="rgb"/>
+                </LineBorder>
+              </Border>
               <Color PropertyName="color" blue="ed" green="48" red="46" type="rgb"/>
             </TitledBorder>
           </Border>
@@ -283,7 +302,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="16" y="240" width="670" height="70"/>
+          <AbsoluteConstraints x="20" y="260" width="660" height="70"/>
         </Constraint>
       </Constraints>
 
@@ -295,7 +314,7 @@
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="txtSenha" min="-2" pref="408" max="-2" attributes="0"/>
-                  <EmptySpace pref="100" max="32767" attributes="0"/>
+                  <EmptySpace pref="89" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

@@ -24,7 +24,9 @@ public class MenuExcluir extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(700, 500));
         getContentPane().setLayout(null);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Selecione "));
+        jPanel1.setBackground(new java.awt.Color(222, 223, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(122, 124, 255)), "Selecione ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(79, 82, 255))); // NOI18N
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
         btnExcluirLogin.setBackground(new java.awt.Color(70, 72, 237));
         btnExcluirLogin.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 14)); // NOI18N

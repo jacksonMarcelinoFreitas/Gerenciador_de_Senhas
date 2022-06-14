@@ -76,10 +76,20 @@ public class Alterar extends javax.swing.JFrame {
         jPanel1.setBounds(0, 20, 700, 42);
 
         txtNome.setBackground(new java.awt.Color(181, 182, 255));
+        txtNome.setForeground(new java.awt.Color(56, 58, 186));
+        txtNome.setSelectedTextColor(new java.awt.Color(56, 58, 186));
+        txtNome.setSelectionColor(new java.awt.Color(255, 255, 255));
 
         txtSobrenome.setBackground(new java.awt.Color(181, 182, 255));
+        txtSobrenome.setForeground(new java.awt.Color(56, 58, 186));
+        txtSobrenome.setCaretColor(new java.awt.Color(56, 58, 186));
+        txtSobrenome.setSelectedTextColor(new java.awt.Color(56, 58, 186));
+        txtSobrenome.setSelectionColor(new java.awt.Color(255, 255, 255));
 
         txtSenha.setBackground(new java.awt.Color(181, 182, 255));
+        txtSenha.setForeground(new java.awt.Color(56, 58, 186));
+        txtSenha.setSelectedTextColor(new java.awt.Color(56, 58, 186));
+        txtSenha.setSelectionColor(new java.awt.Color(255, 255, 255));
 
         jLabel2.setForeground(new java.awt.Color(79, 82, 255));
         jLabel2.setText("Nome");
@@ -94,11 +104,17 @@ public class Alterar extends javax.swing.JFrame {
         jLabel5.setText("Tipo");
 
         txtTipo.setBackground(new java.awt.Color(181, 182, 255));
+        txtTipo.setForeground(new java.awt.Color(56, 58, 186));
+        txtTipo.setSelectedTextColor(new java.awt.Color(56, 58, 186));
+        txtTipo.setSelectionColor(new java.awt.Color(255, 255, 255));
 
         jLabel6.setForeground(new java.awt.Color(79, 82, 255));
         jLabel6.setText("URL");
 
         txtUrl.setBackground(new java.awt.Color(181, 182, 255));
+        txtUrl.setForeground(new java.awt.Color(56, 58, 186));
+        txtUrl.setSelectedTextColor(new java.awt.Color(56, 58, 186));
+        txtUrl.setSelectionColor(new java.awt.Color(255, 255, 255));
 
         jLabel4.setForeground(new java.awt.Color(79, 82, 255));
         jLabel4.setText("ID");
@@ -175,6 +191,7 @@ public class Alterar extends javax.swing.JFrame {
         getContentPane().add(jPanel3);
         jPanel3.setBounds(0, 70, 700, 200);
 
+        tabelaPesquisar.setBackground(new java.awt.Color(212, 213, 255));
         tabelaPesquisar.setForeground(new java.awt.Color(79, 82, 255));
         tabelaPesquisar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -187,6 +204,8 @@ public class Alterar extends javax.swing.JFrame {
                 "ID Usuário", "Nome", "Sobrenome", "Url", "Tipo", "Senha"
             }
         ));
+        tabelaPesquisar.setGridColor(new java.awt.Color(143, 148, 176));
+        tabelaPesquisar.setSelectionBackground(new java.awt.Color(255, 255, 255));
         tabelaPesquisar.setSelectionForeground(new java.awt.Color(79, 82, 255));
         tabelaPesquisar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

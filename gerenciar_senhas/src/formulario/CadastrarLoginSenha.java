@@ -64,7 +64,8 @@ public class CadastrarLoginSenha extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(710, 540));
         getContentPane().setLayout(null);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(70, 72, 237))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(212, 213, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(79, 82, 255)), "Login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(70, 72, 237))); // NOI18N
 
         txtUrl.setBackground(new java.awt.Color(181, 182, 255));
         txtUrl.setForeground(new java.awt.Color(70, 72, 237));
@@ -94,6 +95,7 @@ public class CadastrarLoginSenha extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(70, 72, 237));
         jLabel5.setText("ID Usuário");
 
+        cbxUsuario.setBackground(new java.awt.Color(212, 213, 255));
         cbxUsuario.setForeground(new java.awt.Color(70, 72, 237));
         cbxUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione" }));
         cbxUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -128,7 +130,7 @@ public class CadastrarLoginSenha extends javax.swing.JFrame {
                         .addGap(107, 107, 107)
                         .addComponent(jLabel5)
                         .addGap(18, 18, 18)
-                        .addComponent(cbxUsuario, 0, 94, Short.MAX_VALUE)
+                        .addComponent(cbxUsuario, 0, 91, Short.MAX_VALUE)
                         .addGap(267, 267, 267)))
                 .addGap(102, 102, 102))
         );
@@ -207,7 +209,8 @@ public class CadastrarLoginSenha extends javax.swing.JFrame {
         getContentPane().add(jPanel4);
         jPanel4.setBounds(6, 17, 690, 42);
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(70, 72, 237))); // NOI18N
+        jPanel5.setBackground(new java.awt.Color(212, 213, 255));
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(79, 82, 255)), "Senha", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(70, 72, 237))); // NOI18N
         jPanel5.setForeground(new java.awt.Color(70, 72, 237));
 
         txtSenha.setBackground(new java.awt.Color(181, 182, 255));
@@ -231,7 +234,7 @@ public class CadastrarLoginSenha extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addGap(18, 18, 18)
                 .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -244,7 +247,7 @@ public class CadastrarLoginSenha extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel5);
-        jPanel5.setBounds(16, 240, 670, 70);
+        jPanel5.setBounds(20, 260, 660, 70);
 
         btnSair.setBackground(new java.awt.Color(150, 0, 25));
         btnSair.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 14)); // NOI18N

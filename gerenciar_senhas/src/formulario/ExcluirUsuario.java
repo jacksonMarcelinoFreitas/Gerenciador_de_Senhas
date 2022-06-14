@@ -125,7 +125,8 @@ public class ExcluirUsuario extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(6, 45, 688, 42);
 
-        tabelaPesquisar.setBackground(new java.awt.Color(255, 255, 255));
+        tabelaPesquisar.setAutoCreateRowSorter(true);
+        tabelaPesquisar.setBackground(new java.awt.Color(212, 213, 255));
         tabelaPesquisar.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 14)); // NOI18N
         tabelaPesquisar.setForeground(new java.awt.Color(79, 82, 255));
         tabelaPesquisar.setModel(new javax.swing.table.DefaultTableModel(
@@ -139,6 +140,7 @@ public class ExcluirUsuario extends javax.swing.JFrame {
                 "Nome", "Sobrenome", "ID Usuário"
             }
         ));
+        tabelaPesquisar.setSelectionBackground(new java.awt.Color(255, 255, 255));
         tabelaPesquisar.setSelectionForeground(new java.awt.Color(79, 82, 255));
         tabelaPesquisar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

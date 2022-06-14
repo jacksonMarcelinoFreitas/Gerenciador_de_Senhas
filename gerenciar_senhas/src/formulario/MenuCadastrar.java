@@ -30,7 +30,8 @@ public class MenuCadastrar extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(710, 540));
         getContentPane().setLayout(null);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Tipo de Usuário", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(79, 82, 255))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(222, 223, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(122, 124, 255)), "Tipo de Usuário", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 12), new java.awt.Color(79, 82, 255))); // NOI18N
         jPanel1.setForeground(new java.awt.Color(79, 82, 255));
 
         btnCadastrarExistente.setBackground(new java.awt.Color(70, 72, 237));

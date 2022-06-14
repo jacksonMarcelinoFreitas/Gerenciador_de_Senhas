@@ -70,7 +70,7 @@ public class ExcluirLogin extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(6, 45, 688, 42);
 
-        tabelaPesquisar.setBackground(new java.awt.Color(255, 255, 255));
+        tabelaPesquisar.setBackground(new java.awt.Color(212, 213, 255));
         tabelaPesquisar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         tabelaPesquisar.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 14)); // NOI18N
         tabelaPesquisar.setForeground(new java.awt.Color(79, 82, 255));
@@ -85,6 +85,8 @@ public class ExcluirLogin extends javax.swing.JFrame {
                 "Tipo", "URL", "Senha", "Usuário"
             }
         ));
+        tabelaPesquisar.setGridColor(new java.awt.Color(143, 148, 176));
+        tabelaPesquisar.setSelectionBackground(new java.awt.Color(255, 255, 255));
         tabelaPesquisar.setSelectionForeground(new java.awt.Color(79, 82, 255));
         tabelaPesquisar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

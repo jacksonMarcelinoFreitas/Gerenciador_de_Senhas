@@ -61,7 +61,10 @@ public class SelecionarUsuarioExistente extends javax.swing.JFrame {
         btnSair.setBounds(620, 450, 62, 24);
 
         txtPesquisarUsuario.setEditable(false);
-        txtPesquisarUsuario.setBackground(new java.awt.Color(181, 182, 255));
+        txtPesquisarUsuario.setBackground(new java.awt.Color(212, 213, 255));
+        txtPesquisarUsuario.setForeground(new java.awt.Color(56, 58, 186));
+        txtPesquisarUsuario.setSelectedTextColor(new java.awt.Color(255, 255, 255));
+        txtPesquisarUsuario.setSelectionColor(new java.awt.Color(56, 58, 186));
         txtPesquisarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPesquisarUsuarioActionPerformed(evt);
@@ -78,9 +81,9 @@ public class SelecionarUsuarioExistente extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(56, 58, 186));
         jLabel5.setText("Clique na tabela para selecionar");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(240, 80, 190, 16);
+        jLabel5.setBounds(250, 80, 190, 16);
 
-        tabelaSelecionarUsuario.setBackground(new java.awt.Color(255, 255, 255));
+        tabelaSelecionarUsuario.setBackground(new java.awt.Color(212, 213, 255));
         tabelaSelecionarUsuario.setForeground(new java.awt.Color(70, 72, 237));
         tabelaSelecionarUsuario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -99,6 +102,8 @@ public class SelecionarUsuarioExistente extends javax.swing.JFrame {
                 "ID Usuário", "Nome"
             }
         ));
+        tabelaSelecionarUsuario.setGridColor(new java.awt.Color(143, 148, 176));
+        tabelaSelecionarUsuario.setSelectionBackground(new java.awt.Color(255, 255, 255));
         tabelaSelecionarUsuario.setSelectionForeground(new java.awt.Color(70, 72, 237));
         tabelaSelecionarUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
